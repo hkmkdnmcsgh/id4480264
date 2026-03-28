@@ -18,10 +18,11 @@
             <h2 id="gk-lh">Meet</h2>
             <h1>Gekko</h1>
             <h2>The <span class="cltext-accent-blue">robotics education</span><br> that comes with the <span class="cltext-accent-orange">robot</span></h2>
-            <form class="section-hero-form" action="/subscribe.html">
-              <label class="section-hero-form-label" for="mailSub">Coming soon to <span class="cltext-accent-green">Kickstarter</span></label>
+            <form class="section-hero-form" name="subscription" method="POST" data-netlify="true" action="/success.html">
+              <input type="hidden" name="form-name" value="newsletter"/>
+              <label class="section-hero-form-label" for="subscription">Coming soon to <span class="cltext-accent-green">Kickstarter</span></label>
               <div class="section-hero-form-input-container">
-                <input class="section-hero-form-input stl-input" type="email" placeholder="Enter Email" required>
+                <input class="section-hero-form-input stl-input" type="email" name="email" placeholder="Enter Email" required>
                 <button class="stl-button" type="submit">Notify me at launch</button>
               </div>
             </form>
@@ -101,9 +102,10 @@
               <h3>Get limited exclusive gifts and bonuses</h3>
               <h4>Reserve your spot and receive a limited-time special offer for dedicated backers. <a class="learn-more-link" href="reservation.html">Learn more</a></h4>
             </div>
-            <form class="section-reservation-form">
-                <input class="section-reservation-form-input stl-input" type="email" placeholder="Enter Email" required>
-                <button class="section-reservation-form-button stl-button" type="submit">Make my reservation $1</button>
+            <form class="section-reservation-form" name="reservation" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="reservation"/>
+              <input class="section-reservation-form-input stl-input" type="email" name="email" placeholder="Enter Email" required>
+              <button class="section-reservation-form-button stl-button" type="submit" onclick="window.location='https://buy.stripe.com/5kQ5kFfBqaFmb4BfFj87K00'">Make my reservation $1</button>
             </form>
           </div>
         </div>
@@ -202,9 +204,10 @@
               <h3>Subscribe to <br>campaign updates</h3>
               <h4>You’ll receive an invitation once the campaign starts. <a class="learn-more-link" href="reservation.html">Learn about special offer for dedicated backers</a></h4>
             </div>
-            <form class="section-reservation-form">
-                <input class="section-reservation-form-input stl-input" type="email" placeholder="Enter Email" required>
-                <button class="section-reservation-form-button stl-button" type="submit">Subscribe me</button>
+            <form class="section-reservation-form" name="subscription" method="POST" data-netlify="true" action="/success.html">
+              <input type="hidden" name="form-name" value="newsletter"/>
+              <input class="section-reservation-form-input stl-input" type="email" placeholder="Enter Email" required>
+              <button class="section-reservation-form-button stl-button" type="submit">Subscribe me</button>
             </form>
           </div>
         </div>
