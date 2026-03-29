@@ -752,6 +752,11 @@ main, footer {
 	font-family: Inter-SemiBold;
 }
 
+.section-success-reservation {
+	min-height: 100vh;
+	align-content: center;
+}
+
 /* Media */
 @media (min-width: 1921px) {
 
