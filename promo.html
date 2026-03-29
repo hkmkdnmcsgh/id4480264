@@ -18,8 +18,8 @@
       <div class="wrapper">
         <div class="grid-container section-success">
           <div class="section-success-content">
-            <h3 class="subscribe-success-label">You've been subscribed</h3>
-            <h5 class="subscribe-success-notification">You will receive an invitation to the Kickstarter campaign once it launches</h5>
+            <h3 class="subscribe-success-label" id="subscribe-success-label" style="display:none;">You've been subscribed</h3>
+            <h5 class="subscribe-success-notification" id="subscribe-success-notification" style="display:none;">You will receive an invitation to the Kickstarter campaign once it launches</h5>
             <div class="section-title-text-layout">
               <h3>Get exclusive bonuses when you reserve GEKKO</h3>
               <h4 class="tt-normal">You will receive an invitation once the campaign launches, along with a special offer. To claim it, place a $1 deposit and receive limited exclusive bonuses such as:</h4>
@@ -52,20 +52,17 @@
         </div>
       </div>
     </main>
-    <footer>
-      <div class="wrapper clbg-dark">
-        <div class="grid-container footer-content">
-          <div class="footer-logo-container">
-            <img class="footer-logo" src="assets/img/logo_white.svg">
-            <div class="footer-text">© 2026 HAKAMAKI Dynamics. All rights reserved.</div>
-          </div>
-          <nav class="footer-nav">
-            <a class="footer-nav-button" href="about.html">About</a>
-            <a class="footer-nav-button" href="contact.html">Contact</a>
-          </nav>
-        </div>
-      </div>
-    </footer>
-  <script src="src/js/reservation.js"></script>
+    <footer></footer>
+    <script src="src/js/reservation.js"></script>
+    <script src="src/js/footer.js"></script>
+    <script>
+      (function () {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('ref') === 'subscribe') {
+          document.getElementById('subscribe-success-label').style.display = '';
+          document.getElementById('subscribe-success-notification').style.display = '';
+        }
+      })();
+    </script>
   </body>
 </html>
