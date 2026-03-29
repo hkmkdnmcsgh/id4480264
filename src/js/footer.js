@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="wrapper clbg-dark">
       <div class="grid-container footer-content">
         <div class="footer-logo-container">
-          <img class="footer-logo" src="assets/img/logo_white.svg">
+          <img class="footer-logo" src="assets/img/logo_white.svg" alt="">
           <div class="footer-text">© 2026 HAKAMAKI Dynamics. All rights reserved.</div>
         </div>
         <nav class="footer-nav">
