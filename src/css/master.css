@@ -9,7 +9,6 @@
 	--cl-grey: #808080;
 	--cl-white: #FFFFFF;
 
-	/* Zone A: scales from 768px up to 1920px */
 	--lh-hero-title-fix: calc(0.1rem + 1.8958vw);
 	--fs-h1: calc(0.25rem + 5.3125vw);
 	--lh-h1: calc(0.25rem + 4.7917vw);
@@ -731,6 +730,11 @@ main, footer {
 	margin-top: 10px;
 	margin-bottom: 70px;
 	font-family: Inter-SemiBold;
+}
+
+.section-success-reservation {
+	min-height: 100vh;
+	align-content: center;
 }
 
 
